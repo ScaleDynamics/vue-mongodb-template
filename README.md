@@ -4,14 +4,14 @@
 
 This template is configured for the ScaleDynamics web platform. It is on MIT license and ready to use to build your own MEVN based app/service. All is pre-configured: we provide one command to develop with live reload (frontend and backend) and one to deploy to make it live on a url.
 
-One particularity of our platform is that you don’t have to manage the Express.js layers, the platform manages them for you automatically, so you can focus only on the MongoDB/Node/Angular coding.
+One particularity of our platform is that you don’t have to manage the Express.js layers, the platform manages them for you automatically, so you can focus only on the MongoDB/Node/Vue coding.
 
 Note that you need a ScaleDynamics account (create a FREE community account [here](https://console.scaledynamics.com/auth/signup/)).
 
 
 ## How to use
 
-Go in `frontend/vue-app` folder and run those commands:
+Go in `vue-app` folder and run those commands:
 
 ### Project setup
 
@@ -61,8 +61,8 @@ To deploy, select an existing environment or create a new one. For more details 
 ## Template structure
 
 This project is divided in two parts:
-  - the frontend, where you can find a `vue-app` web template app (located in the `frontend/vue-app` folder). It has been created with `vue-cli`. To update it, open the `src` folder where you can add, modify or delete components.
-  - the backend contains a `hello` node module and a MongoDB module. You can update the frontend/backend as you need to build your own app.
+  - the frontend, a `vue-app` web template app created with `vue-cli`. To update it, open the `src` folder where you can add, modify or delete components.
+  - the backend with a node module and a MongoDB module. You can update the frontend/backend as you need to build your own app.
 
 Regarding MongoDB, we provide a template module  in the `src/mongodb.js`. To use your own MongoDB instance, replace the `URI` constant by your own.
 

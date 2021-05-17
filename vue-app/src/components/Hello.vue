@@ -5,25 +5,25 @@
 
 <script>
 // init ScaleDynamics Platform
-import Backend from "hello";
+import Backend from "backend";
 
 const { hello, fetchMovies } = new Backend();
 
 export default {
   name: "Hello",
   props: {},
-  data: function() {
+  data: function () {
     return {
-      message: ""
+      message: "",
     };
   },
-  mounted: function() {
-    hello().then(msg => {
+  mounted: function () {
+    hello().then((msg) => {
       this.message = msg;
     });
 
     // fetchMovies from mongodb
-    fetchMovies("Star Trek").then(data => console.log(data));
-  }
+    fetchMovies("Star Trek").then((data) => console.log(data));
+  },
 };
 </script>

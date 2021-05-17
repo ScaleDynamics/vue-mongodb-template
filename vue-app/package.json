@@ -3,15 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "postinstall": "cd ../../backend/hello/ && npm install",
+    "postinstall": "cd ../backend/ && npm install",
     "preserve": "warp project select",
     "serve:client": "vue-cli-service serve",
-    "serve:server": "warp dev ../../backend/hello/",
+    "serve:server": "warp dev ../backend/",
     "serve": "run-p serve:*",
     "build:client": "vue-cli-service build",
-    "build:server": "warp build ../../backend/hello/",
+    "build:server": "warp build ../backend/",
     "build": "run-s build:server build:client",
-    "deploy": "warp deploy ./ ../../backend/hello/",
+    "deploy": "warp deploy ./ ../backend/",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
