@@ -2,34 +2,19 @@
   <div class="app">
     <img src="./assets/logo.png" class="sd-logo" alt="ScaleDynamics" />
     <hello />
-    <div class="hello">
-      <span>
-        Learn about
-        <a href="https://docs.scaledynamics.com/docs/" target="_blank" rel="noreferrer">
-          ScaleDynamics Platform
-        </a>
-        and
-        <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> Vue </a>
-      </span>
-    </div>
-
-    <div class="mongodb">
-      <span>
-        You can see{{ " " }}
-        <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> mongodb </a
-        >{{ " " }} in action in your dev console {{ ">" }}
-      </span>
-    </div>
+    <mongo />
   </div>
 </template>
 
 <script>
 import Hello from "./components/Hello.vue";
+import Mongo from "./components/Mongo.vue";
 
 export default {
   name: "App",
   components: {
-    Hello
+    Hello,
+    Mongo
   }
 };
 </script>
@@ -51,23 +36,14 @@ export default {
   width: 600px;
 }
 
-span > a {
-  color: bisque;
-}
-
-.hello {
+.centered {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
-.mongodb {
-  margin-top: 20vh;
-  width: 100%;
-  font-size: 18px;
-  display: flex;
-  justify-content: flex-end;
+span > a {
+  color: bisque;
 }
 
 body {
