@@ -12,7 +12,7 @@ This template is configured for the ScaleDynamics web platform. It is on MIT lic
 
 One particularity of our platform is that you don’t have to manage the [Express](https://expressjs.com/) layers, the platform manages them for you automatically, so you can focus only on the MongoDB/Node/Vue coding.
 
-Note that you need a ScaleDynamics account (create a FREE community account [here](https://console.scaledynamics.com/auth/signup/)).
+Note that you need a ScaleDynamics account for deployment (create a FREE community account [here](https://console.scaledynamics.com/auth/signup/)).
 
 
 ## How to use
@@ -25,13 +25,6 @@ Go in `vue-app` folder and run those commands:
 npm install
 ```
 
-### Log in to the ScaleDynamics Platform
-
-Then use your ScaleDynamics account credential to log in to the platform (create a FREE community account [here](https://console.scaledynamics.com/auth/signup/))
-
-```sh
-npx warp login
-```
 
 ### Live-reload for development
 
@@ -52,7 +45,13 @@ First you have to compile and minify your project for production.
 npm run build
 ```
 
-Then use the deploy command
+Then use your ScaleDynamics account credential to log in to the platform (create a FREE community account [here](https://console.scaledynamics.com/auth/signup/))
+
+```sh
+npx warp login
+```
+
+Finally, use the deploy command
 
 ```sh
 npm run deploy
